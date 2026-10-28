@@ -24,7 +24,7 @@
 
         <button
           @click="$emit('close')"
-          class="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors"
+          class="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors cursor-pointer"
           aria-label="Close Modal"
         >
           <X class="w-5 h-5" />
@@ -96,27 +96,38 @@
         </div>
       </div>
 
-      <!-- Action Buttons -->
+      <!-- Action Buttons (Download PDF, Print, Download HTML) -->
       <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4 flex-shrink-0">
-        <div class="flex items-center gap-2">
-          <!-- Print / PDF -->
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- 1-Click Download PDF -->
+          <a
+            :href="currentPdfUrl"
+            :download="currentPdfDownloadName"
+            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-500 text-white shadow-glow-sm inline-flex items-center gap-2 transition-all cursor-pointer"
+          >
+            <Download class="w-4 h-4" />
+            <span>{{ isRtl ? 'تحميل مباشر PDF' : 'Download PDF' }}</span>
+          </a>
+
+          <!-- Print / PDF Preview -->
           <a
             :href="currentCvUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-brand-600 hover:bg-brand-500 text-white shadow-glow-sm inline-flex items-center gap-2 transition-all cursor-pointer"
+            class="px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-850 hover:bg-dark-800 text-slate-200 hover:text-white border border-slate-700 inline-flex items-center gap-2 transition-all cursor-pointer"
           >
-            <Printer class="w-4 h-4" />
+            <Printer class="w-4 h-4 text-brand-400" />
             <span>{{ t.cvModal.printPdf }}</span>
           </a>
 
-          <!-- Download ATS File -->
+          <!-- Download ATS HTML -->
           <a
             :href="currentCvUrl"
             :download="currentCvDownloadName"
-            class="px-4 py-2.5 rounded-xl text-xs font-bold bg-dark-850 hover:bg-dark-800 text-slate-200 hover:text-white border border-slate-700 inline-flex items-center gap-2 transition-all cursor-pointer"
+            class="px-3 py-2.5 rounded-xl text-xs font-semibold bg-dark-950 hover:bg-dark-900 text-slate-400 hover:text-slate-200 border border-slate-800 inline-flex items-center gap-1.5 transition-all cursor-pointer"
+            title="Download standalone ATS HTML"
           >
-            <Download class="w-4 h-4 text-brand-400" />
+            <FileCode class="w-3.5 h-3.5" />
             <span>{{ t.cvModal.downloadHtml }}</span>
           </a>
         </div>
@@ -252,7 +263,7 @@ import { ref, computed } from 'vue';
 import { useLanguage } from '../../composables/useLanguage';
 import { cvDataStore } from '../../data/cv-data';
 import { CvTrack, Language } from '../../types';
-import { X, CheckCircle2, Printer, Download, ShieldCheck } from 'lucide-vue-next';
+import { X, CheckCircle2, Printer, Download, ShieldCheck, FileCode } from 'lucide-vue-next';
 
 defineProps<{
   isOpen: boolean;
@@ -260,7 +271,7 @@ defineProps<{
 
 defineEmits(['close']);
 
-const { t } = useLanguage();
+const { isRtl, t } = useLanguage();
 
 const selectedTrack = ref<CvTrack>('fullstack');
 const selectedLang = ref<Language>('en');
@@ -280,5 +291,16 @@ const currentCvDownloadName = computed(() => {
   const langName = selectedLang.value === 'en' ? 'English' : 'Arabic';
   return `Abdelrahman_Mohsen_CV_${trackName}_${langName}.html`;
 });
-</script>
 
+const currentPdfUrl = computed(() => {
+  const trackName = selectedTrack.value === 'fullstack' ? 'FullStack' : 'Backend';
+  const langName = selectedLang.value === 'en' ? 'English' : 'Arabic';
+  return `./cv/Abdelrahman_Mohsen_CV_${trackName}_${langName}.pdf`;
+});
+
+const currentPdfDownloadName = computed(() => {
+  const trackName = selectedTrack.value === 'fullstack' ? 'FullStack' : 'Backend';
+  const langName = selectedLang.value === 'en' ? 'English' : 'Arabic';
+  return `Abdelrahman_Mohsen_CV_${trackName}_${langName}.pdf`;
+});
+</script>
