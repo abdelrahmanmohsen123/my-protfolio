@@ -26,3 +26,4 @@
 <script setup lang="ts">
 // Ambient animated backdrop
 </script>
+
