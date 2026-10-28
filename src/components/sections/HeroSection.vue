@@ -14,7 +14,7 @@
         </div>
         <!-- Status dot -->
         <span 
-          class="absolute bottom-1 right-2 sm:bottom-2 sm:right-3 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#070a12] shadow-sm"
+          class="absolute bottom-1 right-2 sm:bottom-2 sm:right-3 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[#0d1527] shadow-sm"
           :title="t.hero.statusBadge"
         ></span>
       </div>
@@ -73,7 +73,7 @@
           <!-- Dropdown Menu for 4 Versions -->
           <div
             v-if="isDropdownOpen"
-            class="absolute top-full mt-2 left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 w-64 bg-[#0B0F19] border border-slate-700 rounded-xl p-2 shadow-2xl z-30 text-left rtl:text-right text-xs space-y-1 animate-fadeIn"
+            class="absolute top-full mt-2 left-1/2 -translate-x-1/2 sm:left-auto sm:right-0 sm:translate-x-0 w-64 bg-[#131d36] border border-slate-700 rounded-xl p-2 shadow-2xl z-30 text-left rtl:text-right text-xs space-y-1 animate-fadeIn"
           >
             <div class="px-2 py-1 text-[11px] font-bold text-slate-400 uppercase tracking-wider border-b border-slate-800 mb-1">
               {{ isRtl ? 'اختر النسخة للتحميل المباشر' : 'Download Version (PDF)' }}

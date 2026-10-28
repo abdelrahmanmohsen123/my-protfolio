@@ -9,12 +9,13 @@ export default {
     extend: {
       colors: {
         dark: {
-          950: '#070a12',
-          900: '#0B0F19',
-          850: '#0f1626',
-          800: '#141E33',
-          700: '#1e293b',
-          600: '#334155',
+          950: '#0a101d', // Slightly lighter rich dark navy
+          900: '#0d1527', // Main body background
+          850: '#121d36', // Section alternate background
+          800: '#172440', // Cards base
+          750: '#1f2f50', // Card hover / elevated
+          700: '#2b3f63', // Borders & dividers
+          600: '#475569',
         },
         brand: {
           50: '#f0f9ff',
@@ -45,10 +46,9 @@ export default {
       boxShadow: {
         'glow-sm': '0 0 15px -3px rgba(14, 165, 233, 0.25)',
         'glow': '0 0 25px -5px rgba(14, 165, 233, 0.35)',
-        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.5)',
+        'card': '0 4px 20px -2px rgba(0, 0, 0, 0.3)',
       }
     },
   },
   plugins: [],
 }
-

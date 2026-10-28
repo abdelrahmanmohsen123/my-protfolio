@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="py-16 md:py-20 border-b border-slate-900/60 bg-[#0B0F19]/40">
+  <section id="about" class="py-16 md:py-20 border-b border-slate-900/60 bg-[#121d36]/30">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Title -->

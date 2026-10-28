@@ -17,7 +17,7 @@
         <div
           v-for="cat in skillsCategories"
           :key="cat.id"
-          class="bg-[#0B0F19]/60 border border-slate-800/80 rounded-2xl p-5"
+          class="bg-[#15223c]/80 border border-slate-700/70 rounded-2xl p-5 shadow-card hover:border-slate-600 transition-all"
         >
           <!-- Category Title -->
           <div class="flex items-center justify-between mb-3.5">

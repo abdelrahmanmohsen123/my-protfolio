@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="py-16 md:py-24 bg-[#0B0F19]/40">
+  <section id="contact" class="py-16 md:py-24 bg-[#121d36]/30">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <!-- Section Header -->
@@ -16,32 +16,32 @@
       <!-- Direct Contact Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto mb-8">
         <!-- Email -->
-        <div class="bg-[#070a12] border border-slate-800 rounded-xl p-4 text-left rtl:text-right flex items-center justify-between">
+        <div class="bg-[#15223c]/85 border border-slate-700/80 rounded-xl p-4 text-left rtl:text-right flex items-center justify-between shadow-card">
           <div class="truncate mr-3 rtl:mr-0 rtl:ml-3">
-            <span class="text-[11px] font-semibold text-slate-500 block uppercase">{{ t.contact.email }}</span>
+            <span class="text-[11px] font-semibold text-slate-400 block uppercase">{{ t.contact.email }}</span>
             <a :href="'mailto:' + profileData.contact.email" class="text-xs sm:text-sm font-semibold text-white hover:text-brand-400 transition-colors truncate block">
               {{ profileData.contact.email }}
             </a>
           </div>
           <button
             @click="copyText(profileData.contact.email, 'email')"
-            class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors flex-shrink-0 cursor-pointer"
+            class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors flex-shrink-0 cursor-pointer border border-slate-700"
           >
             {{ copiedField === 'email' ? t.contact.copied : t.contact.copy }}
           </button>
         </div>
 
         <!-- Phone / WhatsApp -->
-        <div class="bg-[#070a12] border border-slate-800 rounded-xl p-4 text-left rtl:text-right flex items-center justify-between">
+        <div class="bg-[#15223c]/85 border border-slate-700/80 rounded-xl p-4 text-left rtl:text-right flex items-center justify-between shadow-card">
           <div>
-            <span class="text-[11px] font-semibold text-slate-500 block uppercase">{{ t.contact.phone }}</span>
+            <span class="text-[11px] font-semibold text-slate-400 block uppercase">{{ t.contact.phone }}</span>
             <a :href="'tel:' + profileData.contact.phone" class="text-xs sm:text-sm font-semibold text-white hover:text-emerald-400 transition-colors font-mono block">
               {{ profileData.contact.phone }}
             </a>
           </div>
           <button
             @click="copyText(profileData.contact.phone, 'phone')"
-            class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors flex-shrink-0 cursor-pointer"
+            class="px-2.5 py-1 rounded-md text-[11px] font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors flex-shrink-0 cursor-pointer border border-slate-700"
           >
             {{ copiedField === 'phone' ? t.contact.copied : t.contact.copy }}
           </button>

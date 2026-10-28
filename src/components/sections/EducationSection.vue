@@ -1,5 +1,5 @@
 <template>
-  <section id="education" class="py-16 md:py-24 border-b border-slate-900/60 bg-[#0B0F19]/40">
+  <section id="education" class="py-16 md:py-24 border-b border-slate-900/60 bg-[#121d36]/30">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- Section Header -->
@@ -17,7 +17,7 @@
         <div
           v-for="edu in educationData"
           :key="edu.id"
-          class="bg-[#070a12] border border-slate-800/90 rounded-2xl p-6 sm:p-7 transition-all"
+          class="bg-[#15223c]/85 border border-slate-700/80 rounded-2xl p-6 sm:p-7 shadow-card"
         >
           <!-- Top Row: Program Name & Period -->
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
@@ -28,12 +28,12 @@
               <p class="text-xs sm:text-sm font-semibold text-brand-400 mt-0.5">
                 {{ isRtl ? edu.institution.ar : edu.institution.en }}
               </p>
-              <p class="text-xs text-slate-500">
+              <p class="text-xs text-slate-400">
                 {{ isRtl ? edu.location.ar : edu.location.en }}
               </p>
             </div>
 
-            <span class="text-xs font-mono text-slate-400 bg-dark-950 px-2.5 py-1 rounded border border-slate-800 self-start sm:self-auto flex-shrink-0">
+            <span class="text-xs font-mono text-slate-300 bg-[#0d1527] px-2.5 py-1 rounded border border-slate-700/80 self-start sm:self-auto flex-shrink-0">
               {{ edu.period }}
             </span>
           </div>
@@ -44,7 +44,7 @@
           </p>
 
           <!-- Key Practical Learnings -->
-          <div v-if="edu.keyLearnings && edu.keyLearnings.length > 0" class="pt-3 border-t border-slate-800/80">
+          <div v-if="edu.keyLearnings && edu.keyLearnings.length > 0" class="pt-3 border-t border-slate-700/70">
             <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">
               {{ t.education.keyLearningsLabel }}
             </h4>

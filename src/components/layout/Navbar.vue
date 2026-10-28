@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 inset-x-0 z-40 bg-[#070a12]/80 backdrop-blur-md border-b border-slate-800/60 transition-all duration-200">
+  <header class="fixed top-0 inset-x-0 z-40 bg-[#0d1527]/80 backdrop-blur-md border-b border-slate-700/50 transition-all duration-200">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <!-- Logo / Name -->
       <a href="#" class="flex items-center gap-2.5 group">
@@ -58,7 +58,7 @@
     <!-- Mobile Drawer -->
     <div
       v-if="mobileMenuOpen"
-      class="md:hidden bg-[#0B0F19] border-b border-slate-800 px-4 py-3 space-y-1 animate-fadeIn"
+      class="md:hidden bg-[#131d36] border-b border-slate-700/60 px-4 py-3 space-y-1 animate-fadeIn shadow-2xl"
     >
       <a
         v-for="link in navLinks"

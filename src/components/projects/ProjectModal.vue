@@ -5,7 +5,7 @@
     @click.self="$emit('close')"
   >
     <div
-      class="bg-dark-900 border border-slate-700/80 rounded-3xl max-w-3xl w-full p-6 sm:p-8 space-y-6 shadow-2xl relative animate-scaleUp overflow-hidden max-h-[90vh] flex flex-col"
+      class="bg-[#131d36] border border-slate-700 rounded-3xl max-w-3xl w-full p-6 sm:p-8 space-y-6 shadow-2xl relative animate-scaleUp overflow-hidden max-h-[90vh] flex flex-col"
     >
       <!-- Top Glow Accent -->
       <div 

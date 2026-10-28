@@ -1,5 +1,8 @@
 <template>
-  <div class="min-h-screen bg-[#070a12] text-slate-100 flex flex-col font-sans transition-colors duration-200">
+  <div class="min-h-screen bg-[#0d1527] text-slate-100 flex flex-col font-sans transition-colors duration-200 relative selection:bg-brand-500 selection:text-white">
+    <!-- Smooth Animated Ambient Movement in Background -->
+    <AnimatedBackground />
+
     <!-- Navbar Header -->
     <Navbar @open-cv-modal="isCvModalOpen = true" />
 
@@ -40,6 +43,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import AnimatedBackground from './components/ui/AnimatedBackground.vue';
 import Navbar from './components/layout/Navbar.vue';
 import Footer from './components/layout/Footer.vue';
 import HeroSection from './components/sections/HeroSection.vue';

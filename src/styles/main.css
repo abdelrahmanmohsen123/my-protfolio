@@ -9,8 +9,8 @@
   }
 
   body {
-    background-color: #070a12;
-    color: #f1f5f9;
+    background-color: #0d1527;
+    color: #e2e8f0;
   }
 
   /* Custom Clean Scrollbar */
@@ -20,17 +20,79 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #0B0F19;
+    background: #0d1527;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #1e293b;
+    background: #233352;
     border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #334155;
+    background: #33486e;
   }
+}
+
+/* Subtle Modern Engineering Grid Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Smooth, High-Performance Ambient Background Movement */
+@keyframes float-slow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(50px, -60px, 0) scale(1.12);
+  }
+  66% {
+    transform: translate3d(-40px, 40px, 0) scale(0.92);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-reverse {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-60px, 50px, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(40px, -30px, 0) scale(0.95);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-pulse {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0.18;
+  }
+  50% {
+    transform: translate3d(30px, 30px, 0) scale(1.18);
+    opacity: 0.28;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 22s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 26s ease-in-out infinite;
+}
+
+.animate-float-pulse {
+  animation: float-pulse 18s ease-in-out infinite;
 }
 
 @keyframes fadeIn {
@@ -62,4 +124,3 @@
 .animate-scaleUp {
   animation: scaleUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
-

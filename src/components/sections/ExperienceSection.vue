@@ -17,7 +17,7 @@
         <div
           v-for="exp in experienceData"
           :key="exp.id"
-          class="bg-[#0B0F19]/60 border border-slate-800/80 rounded-2xl p-6 transition-all"
+          class="bg-[#15223c]/80 border border-slate-700/70 rounded-2xl p-6 transition-all shadow-card"
         >
           <!-- Header -->
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
@@ -34,11 +34,11 @@
                 </span>
               </div>
               <p class="text-xs sm:text-sm font-semibold text-brand-400 mt-0.5">
-                {{ exp.company }} <span class="text-slate-600 font-normal">({{ isRtl ? exp.employmentType.ar : exp.employmentType.en }})</span>
+                {{ exp.company }} <span class="text-slate-400 font-normal">({{ isRtl ? exp.employmentType.ar : exp.employmentType.en }})</span>
               </p>
             </div>
 
-            <span class="text-xs font-mono text-slate-400 bg-dark-950 px-2.5 py-1 rounded border border-slate-800 self-start sm:self-auto">
+            <span class="text-xs font-mono text-slate-300 bg-[#0d1527] px-2.5 py-1 rounded border border-slate-700/80 self-start sm:self-auto">
               {{ isRtl ? exp.period.ar : exp.period.en }}
             </span>
           </div>
@@ -56,11 +56,11 @@
           </ul>
 
           <!-- Tech stack tags -->
-          <div class="mt-4 pt-3 border-t border-slate-800/60 flex flex-wrap gap-1.5">
+          <div class="mt-4 pt-3 border-t border-slate-700/60 flex flex-wrap gap-1.5">
             <span
               v-for="tech in exp.technologies.slice(0, 6)"
               :key="tech"
-              class="text-[10px] font-mono px-2 py-0.5 rounded bg-dark-950 text-slate-400 border border-slate-800"
+              class="text-[10px] font-mono px-2 py-0.5 rounded bg-[#0d1527] text-slate-300 border border-slate-700/80"
             >
               {{ tech }}
             </span>
