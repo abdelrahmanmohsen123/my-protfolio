@@ -14,44 +14,44 @@ export const profileData: Profile = {
     ar: 'متخصص بتطوير الباك إند ولارفيل',
   },
   heroHeadline: {
-    en: 'Building reliable backend systems and scalable web applications that power real-world products.',
-    ar: 'بناء أنظمة خلفية موثوقة وتطبيقات ويب متكاملة تدعم منتجات حقيقية عالية الأداء.',
+    en: 'Building resilient backend architectures and high-performance web applications that power real-world products.',
+    ar: 'بناء أنظمة خلفية عالية الموثوقية وتطبيقات ويب متكاملة تدعم منصات حقيقية في السوق.',
   },
   heroIntro: {
-    en: 'Full Stack Software Engineer with deep backend specialization in PHP, Laravel, RESTful APIs, and MySQL. Experienced in building production systems with end-to-end development ownership across sports, logistics, fintech, and marketplaces.',
-    ar: 'مهندس برمجيات فل ستاك مع تخصص عميق في هندسة الباك إند بلغة PHP وإطار عمل Laravel، وتصميم واجهات RESTful APIs وقواعد بيانات MySQL. أمتلك خبرة عملية في قيادة وتطوير أنظمة إنتاجية في مجالات النقل والخدمات اللوجستية، التكنولوجيا المالية، الرياضة، والمنصات الخدمية.',
+    en: 'Specializing in PHP, Laravel, RESTful APIs, and MySQL. Experienced in driving end-to-end development across logistics, sports, and financial platforms.',
+    ar: 'متخصص في PHP و Laravel وتصميم واجهات RESTful APIs وقواعد بيانات MySQL، مع خبرة عملية في قيادة التطوير لمنصات النقل والرياضة والخدمات المالية.',
   },
   about: {
     paragraphs: [
       {
-        en: 'I am a Full Stack Software Engineer specializing primarily in robust PHP & Laravel backend architecture, database optimization, and high-performance RESTful APIs. Over years of hands-on production engineering, I have taken significant end-to-end development ownership on systems operating under continuous business demand.',
-        ar: 'أعمل كمهندس برمجيات فل ستاك مع تركيز وتخصص قوي في هندسة وتطوير الأنظمة الخلفية (Backend) باستخدام PHP وLaravel، وتصميم واجهات البرمجة RESTful APIs وتحسين أداء قواعد البيانات. قمت بالمساهمة والإشراف المباشر على دورة التطوير البرمجية الكاملة للعديد من المنصات الإنتاجية العاملة فعلياً في السوق.',
+        en: 'Software Engineer with hands-on production experience leading end-to-end development for commercial web applications.',
+        ar: 'مهندس برمجيات ذو خبرة عملية في قيادة دورة التطوير المتكاملة لمنصات وتطبيقات حية في السوق.',
       },
       {
-        en: 'On the frontend side, I have verified professional experience in JavaScript, jQuery, Laravel Blade, HTML5, CSS3, and Bootstrap, creating responsive, accessible administrative dashboards and client interfaces that integrate tightly with backend services. I work closely with mobile engineers and stakeholders to transform product requirements into scalable technical realities.',
-        ar: 'وعلى صعيد الواجهات الأمامية (Frontend)، أمتلك خبرة عملية راسخة في جافاسكريبت، ومكتبة jQuery، وقوالب Laravel Blade، وHTML5، وCSS3، وBootstrap، حيث قمت ببناء لوحات تحكم إدارية تفاعلية وواجهات مستخدم سريعة الاستجابة تتكامل بسلاسة مع الـ APIs والأنظمة الخلفية.',
+        en: 'Deeply specialized in PHP, Laravel, RESTful API architecture, and MySQL database optimization.',
+        ar: 'تخصص عميق في لغة PHP وإطار عمل Laravel، وتصميم واجهات RESTful APIs وتحسين أداء قواعد بيانات MySQL.',
       },
       {
-        en: 'I emphasize maintainable codebases, secure multi-tenant architectures, clear API contracts, and defensive database queries. To continuously expand my engineering boundaries, I am actively broadening my knowledge in advanced Linux system administration, DevOps automation, Docker containerization, and data analytics.',
-        ar: 'أركز دائماً على نظافة الكود وقابلية صيانته، وتصميم صلاحيات الوصول المتقدمة، وتقديم توثيق دقيق للـ APIs. وأحرص باستمرار على توسيع آفاقي التقنية من خلال التعلم العملي في إدارة خوادم لينكس المتقدمة، وأدوات الـ DevOps، وحاويات Docker، وأساسيات الحوسبة السحابية وتحليل البيانات.',
+        en: 'Verified professional frontend expertise using JavaScript (ES6+), jQuery, Laravel Blade, HTML5, CSS3, and Bootstrap.',
+        ar: 'خبرة مهنية مثبتة في بناء الواجهات ولوحات التحكم التفاعلية باستخدام JavaScript و jQuery و Blade و Bootstrap.',
+      },
+      {
+        en: 'Committed to clean code, defensive database design, and continuous learning in Linux systems and DevOps.',
+        ar: 'ملتزم بجودة الكود وتصميم قواعد البيانات المحكمة، مع مواصلة التعلم في أنظمة لينكس والـ DevOps.',
       },
     ],
     highlights: [
       {
-        label: { en: 'Core Specialization', ar: 'التخصص الأساسي' },
-        value: { en: 'PHP, Laravel & REST APIs', ar: 'PHP و Laravel و REST APIs' },
+        label: { en: 'Primary Focus', ar: 'التركيز الأساسي' },
+        value: { en: 'Laravel, RESTful APIs & MySQL', ar: 'Laravel و RESTful APIs و MySQL' },
       },
       {
-        label: { en: 'Database Focus', ar: 'قواعد البيانات' },
-        value: { en: 'MySQL Design & Query Optimization', ar: 'تصميم وتحسين استعلامات MySQL' },
+        label: { en: 'Frontend', ar: 'الواجهات الأمامية' },
+        value: { en: 'JavaScript, jQuery & Blade', ar: 'JavaScript و jQuery و Blade' },
       },
       {
-        label: { en: 'Verified Frontend', ar: 'الواجهات الأمامية' },
-        value: { en: 'JavaScript, jQuery, Blade, Bootstrap', ar: 'JavaScript و jQuery و Blade و Bootstrap' },
-      },
-      {
-        label: { en: 'Continuous Learning', ar: 'مجال التوسع المستمر' },
-        value: { en: 'Linux, DevOps & Cloud', ar: 'أنظمة Linux والـ DevOps والسحابة' },
+        label: { en: 'Location', ar: 'الموقع' },
+        value: { en: 'Egypt (Open to Remote / Relocation)', ar: 'مصر (متاح للعمل عن بُعد)' },
       },
     ],
   },

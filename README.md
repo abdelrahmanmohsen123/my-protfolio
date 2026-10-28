@@ -196,3 +196,4 @@ All 4 CV versions are written in pure, single-column, ATS-parseable structure (c
 - `public/cv/Abdelrahman_Mohsen_CV_Backend_Arabic.html`
 
 Visitors can preview each version inside the website or click **Print / Save as PDF** to generate an official 1-to-2 page PDF resume instantly using standard browser printing.
+

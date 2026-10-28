@@ -1,17 +1,26 @@
 <template>
-  <div class="min-h-screen bg-[#070a12] text-slate-100 flex flex-col font-sans transition-colors duration-300">
+  <div class="min-h-screen bg-[#070a12] text-slate-100 flex flex-col font-sans transition-colors duration-200">
     <!-- Navbar Header -->
     <Navbar @open-cv-modal="isCvModalOpen = true" />
 
-    <!-- Main Content Area -->
+    <!-- Main Content Area: Focused 6 Sections -->
     <main class="flex-grow">
+      <!-- 1. Hero with Professional Photo -->
       <HeroSection @open-cv-modal="isCvModalOpen = true" />
+      
+      <!-- 2. About (3-4 concise lines) -->
       <AboutSection />
+      
+      <!-- 3. Skills (Clean organized badges) -->
       <SkillsSection />
+      
+      <!-- 4. Featured Projects (Name, 1-2 line description, main tech, view button) -->
       <ProjectsSection />
+      
+      <!-- 5. Experience (Compact timeline) -->
       <ExperienceSection />
-      <EducationSection />
-      <LearningSection />
+      
+      <!-- 6. Contact (Simple clear options) -->
       <ContactSection />
     </main>
 
@@ -35,8 +44,6 @@ import AboutSection from './components/sections/AboutSection.vue';
 import SkillsSection from './components/sections/SkillsSection.vue';
 import ProjectsSection from './components/sections/ProjectsSection.vue';
 import ExperienceSection from './components/sections/ExperienceSection.vue';
-import EducationSection from './components/sections/EducationSection.vue';
-import LearningSection from './components/sections/LearningSection.vue';
 import ContactSection from './components/sections/ContactSection.vue';
 import CvModal from './components/cv/CvModal.vue';
 
