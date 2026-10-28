@@ -73,3 +73,4 @@ import { educationData } from '../../data/education';
 
 const { isRtl, t } = useLanguage();
 </script>
+
