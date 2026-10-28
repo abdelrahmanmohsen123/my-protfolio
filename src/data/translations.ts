@@ -5,6 +5,7 @@ export const translations = {
       skills: 'Skills',
       projects: 'Projects',
       experience: 'Experience',
+      education: 'Education & Programs',
       contact: 'Contact',
       cv: 'ATS Resumes',
     },
@@ -37,6 +38,11 @@ export const translations = {
       sectionTitle: 'Experience',
       sectionSubtitle: 'Professional track record in production environments',
       present: 'Present',
+    },
+    education: {
+      sectionTitle: 'Education & Training Programs',
+      sectionSubtitle: 'Scholarships, intensive diplomas, and engineering foundation',
+      keyLearningsLabel: 'Key Practical Learnings & Competencies:',
     },
     contact: {
       sectionTitle: 'Contact',
@@ -71,6 +77,7 @@ export const translations = {
       skills: 'المهارات',
       projects: 'المشاريع',
       experience: 'الخبرة',
+      education: 'التعليم والمنح',
       contact: 'تواصل معي',
       cv: 'السيرة الذاتية (ATS)',
     },
@@ -103,6 +110,11 @@ export const translations = {
       sectionTitle: 'الخبرة المهنية',
       sectionSubtitle: 'مسيرتي العملية في تطوير وإدارة الأنظمة الإنتاجية',
       present: 'حتى الآن',
+    },
+    education: {
+      sectionTitle: 'التعليم والمنح التدريبية',
+      sectionSubtitle: 'الدبلومات والمنح الحكومية المعتمدة والدرجة الهندسية',
+      keyLearningsLabel: 'أبرز ما تعلمته واكتسبته عملياً:',
     },
     contact: {
       sectionTitle: 'تواصل معي',

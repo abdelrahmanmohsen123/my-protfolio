@@ -72,6 +72,7 @@ export interface EducationItem {
   period: string;
   location: LocalizedString;
   description: LocalizedString;
+  keyLearnings?: LocalizedString[];
 }
 
 export interface SkillItem {

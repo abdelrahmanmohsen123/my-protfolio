@@ -89,6 +89,7 @@ const navLinks = computed(() => [
   { id: 'skills', label: t.value.nav.skills },
   { id: 'projects', label: t.value.nav.projects },
   { id: 'experience', label: t.value.nav.experience },
+  { id: 'education', label: t.value.nav.education },
   { id: 'contact', label: t.value.nav.contact },
 ]);
 </script>

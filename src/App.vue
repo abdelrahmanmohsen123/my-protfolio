@@ -19,8 +19,11 @@
       
       <!-- 5. Experience (Compact timeline) -->
       <ExperienceSection />
+
+      <!-- 6. Education & Scholarships (ITI, NTI, University learnings) -->
+      <EducationSection />
       
-      <!-- 6. Contact (Simple clear options) -->
+      <!-- 7. Contact (Simple clear options) -->
       <ContactSection />
     </main>
 
@@ -44,6 +47,7 @@ import AboutSection from './components/sections/AboutSection.vue';
 import SkillsSection from './components/sections/SkillsSection.vue';
 import ProjectsSection from './components/sections/ProjectsSection.vue';
 import ExperienceSection from './components/sections/ExperienceSection.vue';
+import EducationSection from './components/sections/EducationSection.vue';
 import ContactSection from './components/sections/ContactSection.vue';
 import CvModal from './components/cv/CvModal.vue';
 
