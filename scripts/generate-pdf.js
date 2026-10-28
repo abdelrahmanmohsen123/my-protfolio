@@ -34,6 +34,7 @@ async function generatePDFs() {
 
     console.log(`Generating PDF for ${name}...`);
     await page.goto(`file://${htmlPath}`, { waitUntil: 'networkidle0' });
+    await page.emulateMediaType('print');
     await page.pdf({
       path: pdfPath,
       format: 'A4',
