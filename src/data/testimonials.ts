@@ -25,3 +25,4 @@ export const testimonialsData: TestimonialItem[] = [
     isDraft: true, // Marked as draft preview until client formally confirms publication
   },
 ];
+

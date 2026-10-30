@@ -89,3 +89,4 @@ import { Quote, Star } from 'lucide-vue-next';
 
 const { isRtl, t } = useLanguage();
 </script>
+
