@@ -88,6 +88,26 @@ export interface SkillCategory {
   items: SkillItem[];
 }
 
+export interface ServiceItem {
+  id: string;
+  title: LocalizedString;
+  shortDesc: LocalizedString;
+  benefits: LocalizedString[];
+  iconName: string;
+}
+
+export interface TestimonialItem {
+  id: string;
+  clientName: LocalizedString;
+  role: LocalizedString;
+  company?: string;
+  avatar?: string;
+  message: LocalizedString;
+  projectOrService: LocalizedString;
+  rating?: number;
+  isDraft?: boolean;
+}
+
 export type CvTrack = 'backend' | 'fullstack';
 
 export interface ATSCvData {

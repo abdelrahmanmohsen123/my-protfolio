@@ -64,6 +64,6 @@ export const profileData: Profile = {
     },
     github: 'https://github.com/abdelrahmanmohsen123',
     linkedin: 'https://linkedin.com/in/abdelrahman-mohsen-025a9725a',
-    currentPortfolio: 'https://abdelrahmanmohsen123.github.io/',
+    currentPortfolio: 'https://abdelrahman.easynow.top/',
   },
 };
